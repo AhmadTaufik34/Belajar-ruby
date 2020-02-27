@@ -1,0 +1,26 @@
+<table border="2">
+    <tr>
+        <td>Nama</td>
+        <td>Username</td>
+        <td>age</td>
+        <td>address</td>
+        <td>city</td>
+        <td>nik</td>
+        <td>Action</td>
+    </tr>
+    <% @students.each do |student| %>
+    <tr>
+        <td><%= student.id %></td>
+        <td><%= student.name %></td>
+        <td><%= student.username %></td>
+        <td><%= student.age %></td>
+        <td><%= student.address %></td>
+        <td><%= student.city %></td>
+        <td><%= student.nik %></td>
+        <td><%= link_to 'Detail', student_path(student) %> |
+        <td><%= link_to 'Edit', edit_student_path(student) %> |
+        <td><%= link_to 'Hapus', student_path(student), method: :delete, data:{confirm: 'Are you sure?'} %></td>
+        </tr>
+        <% end %>
+</table>
+<%= link_to 'New Book', new_student_path %>

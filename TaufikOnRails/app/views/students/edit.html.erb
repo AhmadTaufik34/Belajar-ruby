@@ -1,0 +1,22 @@
+<%= form_for(@student) do |f| %>
+<%= f.label :name  %> <br>
+<%= f.text_field :name %> <br>
+
+<%= f.label :username  %> <br>
+<%= f.text_field :username  %> <br>
+
+<%=f.label :age  %> <br>
+<%= f.text_field :age %> <br>
+
+<%= f.label :address  %> <br>
+<%= f.text_field :address %> <br>
+
+<%= f.label :city  %> <br>
+<%= f.text_field :city %> <br>
+
+<%= f.label :nik  %> <br>
+<%= f.text_field :nik %> <br>
+
+<%= f.submit "update" %>
+
+<% end  %>

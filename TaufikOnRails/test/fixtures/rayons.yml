@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  nomorruangan: MyString
+  pembimbing: MyString
+  ketuarayon: MyString
+
+two:
+  name: MyString
+  nomorruangan: MyString
+  pembimbing: MyString
+  ketuarayon: MyString
